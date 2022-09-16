@@ -266,6 +266,9 @@ footer .rights a {
   padding: 1rem 3rem;
   height: 40vh;
 }
+.parall2 header .fa-bars {
+  display: none;
+}
 .parall2 header .div {
   text-align: center;
   height: 20vh;
@@ -295,20 +298,23 @@ footer .rights a {
   margin-top: 1%;
   display: none;
 }
-.parall2 header nav ul {
+.parall2 header nav .nav-links .fa-xmark {
+  display: none;
+}
+.parall2 header nav .nav-links ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin-top: 3%;
 }
-.parall2 header nav ul a {
+.parall2 header nav .nav-links ul a {
   color: #80471c;
   text-decoration: none;
 }
-.parall2 header nav ul a:hover {
+.parall2 header nav .nav-links ul a:hover {
   color: #80471c;
 }
-.parall2 header nav ul .underline::after {
+.parall2 header nav .nav-links ul .underline::after {
   display: block;
   left: 0;
   width: 0;
@@ -318,10 +324,10 @@ footer .rights a {
   content: "";
   transition: 0.3s ease-in-out;
 }
-.parall2 header nav ul .underline:hover {
+.parall2 header nav .nav-links ul .underline:hover {
   color: #80471c;
 }
-.parall2 header nav ul .underline:hover::after {
+.parall2 header nav .nav-links ul .underline:hover::after {
   width: 100%;
 }
 .parall2 header .navbar-cng {

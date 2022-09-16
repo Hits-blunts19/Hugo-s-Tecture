@@ -23,17 +23,21 @@
                 <a href="index.html"><i class="fa-solid fa-home"></i></a>
                 <a href="index.html"><h5>Hugo's Tecture</h5></a>
             </div>
-            <nav data-aos="fade-down">
+            <nav>
                 <a href="index.html" style="text-decoration: none;" class="cng-logo"><h5>Hugo's Tecture</h5></a>
-                <ul>
-                    <li><a href="index.html" class="underline active">Home</a></li>
-                    <li><a href="about.html" class="underline active">About</a></li>
-                    <li><a href="service.html" class="underline active">Services</a></li>
-                    <li><a href="portfolio.html" class="underline active">Portfolio</a></li>
-                    <li><a href="blog.html" class="underline active">Blog</a></li>
-                    <li><a href="contact.html" class="underline active">Contact</a></li>
-                </ul>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html" class="underline active">Home</a></li>
+                        <li><a href="about.html" class="underline active">About</a></li>
+                        <li><a href="service.html" class="underline active">Services</a></li>
+                        <li><a href="portfolio.html" class="underline active">Portfolio</a></li>
+                        <li><a href="blog.html" class="underline active">Blog</a></li>
+                        <li><a href="contact.html" class="underline active">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
+            <i class="fa-solid fa-bars" data-aos="fade-right" onclick="showMenu()"></i>
         </header>
     </section>
 
@@ -179,7 +183,16 @@
         </div>
     </footer>
 
-    
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.left = "0";
+        }
+        function hideMenu(){
+            navLinks.style.left = "-200px";
+        }
+    </script>
     <script src="./script.js"></script>
     <script src="./parallax.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

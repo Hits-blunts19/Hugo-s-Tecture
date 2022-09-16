@@ -1,11 +1,11 @@
 @media (max-width: 991px) {
-  .parall {
+  .parall, .parall2 {
     overflow: visible;
   }
-  .parall header {
+  .parall header, .parall2 header {
     height: 50vh;
   }
-  .parall header .fa-bars {
+  .parall header .fa-bars, .parall2 header .fa-bars {
     display: block;
     color: #fff;
     height: 2.5rem;
@@ -19,38 +19,40 @@
     cursor: pointer;
     position: fixed;
     top: 5%;
+    z-index: 5;
   }
-  .parall header nav {
+  .parall header nav, .parall2 header nav {
     display: block;
   }
-  .parall header nav .nav-links {
+  .parall header nav .nav-links, .parall2 header nav .nav-links {
     position: fixed;
     background: #80471c;
     height: 100vh;
     width: 200px;
     top: 0;
+    bottom: 0;
     left: -200px;
     text-align: right;
-    z-index: 2;
+    z-index: 3;
     padding: 3rem 1rem;
     transition: 1s;
   }
-  .parall header nav .nav-links .fa-xmark {
+  .parall header nav .nav-links .fa-xmark, .parall2 header nav .nav-links .fa-xmark {
     display: block;
     color: #fff;
     font-size: 1.3rem;
     cursor: pointer;
   }
-  .parall header nav .nav-links ul {
+  .parall header nav .nav-links ul, .parall2 header nav .nav-links ul {
     display: block;
     margin-top: 10px;
   }
-  .parall header nav .nav-links ul a {
+  .parall header nav .nav-links ul a, .parall2 header nav .nav-links ul a {
     color: #fff;
-    z-index: 3;
+    z-index: 4;
     border-bottom: 1px solid #fff;
   }
-  .parall header .navbar-cng {
+  .parall header .navbar-cng, .parall2 header .navbar-cng {
     display: none;
   }
   .section1 {

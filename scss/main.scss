@@ -278,6 +278,9 @@ footer{
         position: relative;
         padding: 1rem 3rem;
         height: 40vh;
+        .fa-bars{
+            display: none;
+        }
         .div{
             text-align: center;
             height: 20vh;
@@ -307,33 +310,38 @@ footer{
                 margin-top: 1%;
                 display: none;
             }
-            ul{
-                display: flex;
-                justify-content: center;
-                gap: 3rem;
-                margin-top: 3%;
-                a{
-                    color: $primary;
-                    text-decoration: none;
-                    &:hover{
+            .nav-links{
+                .fa-xmark{
+                    display: none;
+                }
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    gap: 3rem;
+                    margin-top: 3%;
+                    a{
+                        color: $primary;
+                        text-decoration: none;
+                        &:hover{
+                            color: $primary;
+                        }
+                    }
+                    .underline::after{
+                        display: block;
+                        left: 0;
+                        width: 0;
+                        height: 2px;
+                        margin-top: 10%;
+                        background: $primary;
+                        content: "";
+                        transition: .3s ease-in-out;
+                    }
+                    .underline:hover{
                         color: $primary;
                     }
-                }
-                .underline::after{
-                    display: block;
-                    left: 0;
-                    width: 0;
-                    height: 2px;
-                    margin-top: 10%;
-                    background: $primary;
-                    content: "";
-                    transition: .3s ease-in-out;
-                }
-                .underline:hover{
-                    color: $primary;
-                }
-                .underline:hover::after{
-                    width: 100%;
+                    .underline:hover::after{
+                        width: 100%;
+                    }
                 }
             }
         }
