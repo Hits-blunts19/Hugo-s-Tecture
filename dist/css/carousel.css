@@ -1,0 +1,55 @@
+.responsive {
+  border-radius: 100px;
+  width: 40%;
+  background: #80471c;
+  padding: 2rem;
+}
+.responsive .carousel p {
+  font-size: 14px;
+  margin-top: 5%;
+  color: #fff;
+}
+.responsive .carousel .nyash {
+  display: flex;
+  gap: 1rem;
+}
+.responsive .carousel .nyash img {
+  height: 6rem;
+  border-radius: 100%;
+  width: 6rem;
+}
+.responsive .carousel .nyash span h5 {
+  font-family: "Satisfy", cursive;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+.responsive .carousel .nyash span h6 {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.responsive .slick-dots {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: left;
+  gap: 0.6rem;
+  margin: 1rem 1rem;
+  padding: 16px 0;
+  list-style: none;
+}
+.responsive .slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  color: transparent;
+}
+.responsive .slick-dots li.slick-active button {
+  background-color: #000;
+}/*# sourceMappingURL=carousel.css.map */

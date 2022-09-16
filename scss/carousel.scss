@@ -1,0 +1,64 @@
+$dark: #000;
+$light: #fff;
+$primary: #80471c;
+
+.responsive{
+    border-radius: 100px;
+    width: 40%;
+    background: $primary;
+    padding: 2rem;
+    .carousel{
+        p{
+            font-size: 14px;
+            margin-top: 5%;
+            color: $light;
+        }
+        .nyash{
+            display: flex;
+            gap: 1rem;
+            img{
+                height: 6rem;
+                border-radius: 100%;
+                width: 6rem;
+            }
+            span{
+                h5{
+                    font-family: 'Satisfy', cursive;
+                    font-size: 30px;
+                    font-weight: 600;
+                    color: $light;
+                }
+                h6{
+                    margin-top: 1rem;
+                    text-transform: uppercase;
+                    color: $light;
+                }
+            }
+        }
+    }
+    .slick-dots{
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: left;
+        gap: .6rem;
+        margin: 1rem 1rem;
+        padding: 16px 0;
+        list-style: none;
+        button{
+            display: block;
+            width: .5rem;
+            height: .5rem;
+            padding: 0;
+            border: none;
+            border-radius: 50px;
+            background: $light;
+            color: transparent;
+        }
+    }
+    .slick-dots li.slick-active button{
+        background-color: #000;
+    }
+}
