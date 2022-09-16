@@ -23,6 +23,9 @@ body {
   height: 80vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
+.parall header .fa-bars {
+  display: none;
+}
 .parall header .div {
   text-align: center;
   height: 20vh;
@@ -49,20 +52,23 @@ body {
   margin-top: 1%;
   display: none;
 }
-.parall header nav ul {
+.parall header nav .nav-links .fa-xmark {
+  display: none;
+}
+.parall header nav .nav-links ul {
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin-top: 3%;
 }
-.parall header nav ul a {
+.parall header nav .nav-links ul a {
   color: #80471c;
   text-decoration: none;
 }
-.parall header nav ul a:hover {
+.parall header nav .nav-links ul a:hover {
   color: #80471c;
 }
-.parall header nav ul .underline::after {
+.parall header nav .nav-links ul .underline::after {
   display: block;
   left: 0;
   width: 0;
@@ -72,10 +78,10 @@ body {
   content: "";
   transition: 0.3s ease-in-out;
 }
-.parall header nav ul .underline:hover {
+.parall header nav .nav-links ul .underline:hover {
   color: #80471c;
 }
-.parall header nav ul .underline:hover::after {
+.parall header nav .nav-links ul .underline:hover::after {
   width: 100%;
 }
 .parall header .navbar-cng {
@@ -101,14 +107,14 @@ body {
   margin-top: 5px;
   color: #fff;
 }
-.parall header .navbar-cng ul {
+.parall header .navbar-cng .nav-links ul {
   margin-top: 1%;
 }
-.parall header .navbar-cng ul a {
+.parall header .navbar-cng .nav-links ul a {
   color: #fff;
   text-decoration: none;
 }
-.parall header .navbar-cng ul .underline::after {
+.parall header .navbar-cng .nav-links ul .underline::after {
   display: block;
   left: 0;
   width: 0;
@@ -118,10 +124,10 @@ body {
   content: "";
   transition: 0.3s ease-in-out;
 }
-.parall header .navbar-cng ul .underline:hover {
+.parall header .navbar-cng .nav-links ul .underline:hover {
   color: #fff;
 }
-.parall header .navbar-cng ul .underline:hover::after {
+.parall header .navbar-cng .nav-links ul .underline:hover::after {
   width: 100%;
 }
 
@@ -341,13 +347,13 @@ footer .rights a {
   margin-top: 5px;
   color: #fff;
 }
-.parall2 header .navbar-cng ul {
+.parall2 header .navbar-cng .nav-links ul {
   margin-top: 1%;
 }
-.parall2 header .navbar-cng ul a {
+.parall2 header .navbar-cng .nav-links ul a {
   color: #fff;
 }
-.parall2 header .navbar-cng ul .underline::after {
+.parall2 header .navbar-cng .nav-links ul .underline::after {
   display: block;
   left: 0;
   width: 0;
@@ -357,10 +363,10 @@ footer .rights a {
   content: "";
   transition: 0.3s ease-in-out;
 }
-.parall2 header .navbar-cng ul .underline:hover {
+.parall2 header .navbar-cng .nav-links ul .underline:hover {
   color: #fff;
 }
-.parall2 header .navbar-cng ul .underline:hover::after {
+.parall2 header .navbar-cng .nav-links ul .underline:hover::after {
   width: 100%;
 }
 
